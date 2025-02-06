@@ -13,7 +13,7 @@ a = "hello"
 print(a)
 # user-input
 
-name = input("Enter your name here")
+"""name = input("Enter your name here")
 print(name)
 
 # typecasting
@@ -31,7 +31,25 @@ c = a + b
 print(type(c))
 
 # operators and operands
-print(bin(78))
+print(bin(78))"""
 
-# if else
-marks = 78
+# for loop
+"""for i in range(0, 6, 2):
+    print(i)"""
+# while loop
+"""n = 1
+while n <= 10:
+    print(n)
+    n += 2"""
+
+# nested loop
+for i in range(1, 4):
+    for j in range(1, 11):
+        print(j, end=" ")
+    print()
+
+# for pattern
+"""for i in range(1, 6):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()"""

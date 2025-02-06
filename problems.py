@@ -110,3 +110,15 @@ elif num >= 1000 and num <= 9999:
     print("it is a four digit no.")
 else:
     print("it is a five digit no.")"""
+
+# write a table  with for loop
+"""n = int(input("Enter your no."))
+for i in range(1, 11):
+    print(n, "x", i, "=", n * i)"""
+
+# with while loop
+n = 1
+a = int(input("Enter your no."))
+while n <= 10:
+    print(a, "x", n, "=", n * a)
+    n += 1
