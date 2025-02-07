@@ -117,8 +117,173 @@ for i in range(1, 11):
     print(n, "x", i, "=", n * i)"""
 
 # with while loop
-n = 1
+"""n = 1
 a = int(input("Enter your no."))
 while n <= 10:
     print(a, "x", n, "=", n * a)
+    n += 1"""
+# 7/2/25
+# write a prog. to find the sum of all the even no. upto 50
+"""sum = 0
+for i in range(1, 51):
+    if i % 2 == 0:
+        sum += i
+print("The sum of first 50 no. is", sum)"""
+
+# write a prog. to write first 20 no. and their sq no.
+"""for i in range(1, 21):
+    print(i, i ** 2)"""
+
+# write a prog. to find sum of first 10 odd no. using while loop.
+"""sum = 0
+n = 0
+while n <= 20:
+    if n % 2 != 0:
+        sum += n
     n += 1
+print("The sum of first 10 odd no. is ", sum)"""
+
+# write a prog. to check if a no. is divisible by  8 and 12 upto 100 no.
+"""for i in range(1, 101):
+    if i % 8 == 0 and i % 12 == 0:
+        print(i)"""
+
+# write a prog. to create a billing system at supermarket
+# using while True
+"""while True:
+    name = input("Enter Customer's name:")
+    total = 0
+
+    while True:
+        print("Enter the amount and quantity")
+        amount = float(input("Enter amount:"))
+        quantity = float(input("Enter the quantity:"))
+        total += amount * quantity
+        repeat = input("do you want to add more items? (yes/no):")
+        if repeat == "no" or repeat == "No":
+            break
+    print("-" * 40)
+    print("Name:", name)
+    print("Amount to be paid:", total)
+    print("-" * 40)
+    print("**********Happy shopping**********")
+
+    repeat1 = input("do want to go to next customer? (yes/no):")
+    if repeat1 == "no" or repeat == "No":
+        break"""
+
+# a= "why fit in , when you are born to stand out!"
+# write a program to find out length og a string
+"""a = "why fit in, when you are born to stand out!"
+ print(len(a))"""
+
+# write a program to check how many times alphabet o is occurring.
+"""a = "why fit in, when you are born to stand out!"
+print(a.count("o"))"""
+
+# write a prog to convert the whole string into lower and upper cases.
+"""a = "why fit in, when you are born to stand out!"
+print(a.upper())
+print(a.lower())"""
+
+# write a prog to convert the following string into a title.
+"""a = "why fit in, when you are born to stand out!"
+print(a.title())"""
+
+# write a prog to find the index no. of "fit in" .
+"""a = "why fit in, when you are born to stand out!"
+print(a.find("fit in"))"""
+
+# write a prog to display the pattern (1,22,333,4444,55555) / (*,**,***,****,*****) / 1,12,123,1234,12345)
+"""for i in range(1, 6):  # rows
+    for j in range(1, i + 1):  # columns
+        print(i, end=" ")
+    print()"""
+# -------------------------------------(*,**,***,****,*****)------------------------------------------------
+"""for i in range(1, 6):  # rows
+    for j in range(1, i + 1):  # columns
+        print("*", end=" ")
+    print()"""
+# -----------------------------(1,12,123,1234,12345)------------------------------------------------------------
+"""for i in range(1, 6):  # rows
+    for j in range(1, i + 1):  # columns
+        print(j, end=" ")
+    print()"""
+
+# ---------------------------(11111,2222.333,44,5)--------------------------------------------------------------
+"""for i in range(1, 6):  # rows
+    for j in range(6, i, -1):  # columns
+        print(i, end=" ")
+    print()"""
+
+# -------------------------------------------------------------------------------------------------------------
+"""for i in range(1, 6):
+    for j in range(5, i, -1):
+        print(" ", end=" ")
+    for k in range(i):
+        print("*", end=" ")
+    print()"""
+
+# -------------------------(1,21,321,4321,54321)----------------------------------------------------------
+"""for i in range(1, 6):
+    for j in range(i, 0, -1):
+        print(j, end=" ")
+    print()"""
+
+# ----------------------------(*,**,***,****,*****,****,***,**,*)-----------------------------------------
+"""for i in range(1, 6):
+    for j in range(1, i + 1):
+        print("*", end=" ")
+    print()
+for i in range(5, 0, -1):
+    for k in range(0, i - 1):
+        print("*", end=" ")
+    print() """
+
+# --------(1,2/4,3/6/9,4/8/12/16,5/10/15/20/25,6/12/18/24/30/36, 7/14/21/28/35/42/49)--------------------------
+"""for i in range(1, 11):
+    for j in range(1, i + 1):
+        print(i * j, end=" ")
+    print()"""
+
+# Write a prog. to get Fibonacci series up to 10 no.
+"""a = 0
+b = 1
+n = int(input("Enter your number:"))
+if n == 1:
+    print(1)
+else:
+    print(a)
+    print(b)
+    for i in range(2, n):
+        c = a + b
+        a = b
+        b = c
+        print(c)"""
+
+# write a prog to check the no. is prime or not
+"""num = int(input("Enter your no. :"))
+
+if num <= 1:
+    print("it is not a prime no.")
+else:
+    for i in range(2, num):
+        if num % i == 0:
+            print("number is not prime")
+            break
+    else:
+        print("it is prime no.")"""
+
+# write a prog to check no. is palindrome
+num = int(input("Enter a no. here"))
+temp = num
+rev = 0
+while num > 0:
+    dig = num % 10
+    rev = rev * 10 + dig
+    num = num // 10
+if rev == temp:
+    print("it is palindrome")
+
+else:
+    print("it is not a palindrome")

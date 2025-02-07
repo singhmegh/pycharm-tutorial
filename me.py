@@ -1,7 +1,7 @@
 print('''hello
 my name is 
 megha''')
-print('''hy
+print('''hye
 where are you''')
 print("hello worls \n this is my first program \n bye")
 # this is comment
@@ -43,12 +43,29 @@ while n <= 10:
     n += 2"""
 
 # nested loop
-for i in range(1, 4):
+"""for i in range(1, 4):
     for j in range(1, 11):
         print(j, end=" ")
-    print()
+    print()"""
 # for pattern
 """for i in range(1, 6):
     for j in range(1, i + 1):
         print(j, end=" ")
     print()"""
+
+# continue statement
+"""for i in range(1, 11):
+    if i == 5:
+        continue
+    else:
+        print(i)"""
+
+# break statement
+"""for i in range(1, 11):
+    if i == 7:
+        break
+    else:
+        print(i)
+print("thanks")"""
+
+# string function
