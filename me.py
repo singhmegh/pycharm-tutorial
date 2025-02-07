@@ -69,3 +69,4 @@ while n <= 10:
 print("thanks")"""
 
 # string function
+# list

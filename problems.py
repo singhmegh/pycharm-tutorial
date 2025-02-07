@@ -85,7 +85,7 @@ elif choice == 3:
     print("the area of circle is:", area)
 elif choice == 4:
     base = float(input("Enter the base if triangle"))
-    height = float(input("Enter the height of traingle"))
+    height = float(input("Enter the height of triangle"))
     area = 0.5 * base * height
     print("Enter the area of triangle is:", area)
 else:
@@ -275,7 +275,7 @@ else:
         print("it is prime no.")"""
 
 # write a prog to check no. is palindrome
-num = int(input("Enter a no. here"))
+"""num = int(input("Enter a no. here"))
 temp = num
 rev = 0
 while num > 0:
@@ -286,4 +286,145 @@ if rev == temp:
     print("it is palindrome")
 
 else:
-    print("it is not a palindrome")
+    print("it is not a palindrome")"""
+
+# calculator2 for area with while True
+"""while True:
+    print(press 1 to get the area of square
+press 2 to get the area of rectangle
+press 3 to get the area of circle
+press 4 to get the area of triangle)
+
+    choice = int(input("Enter a no. between 1-4:"))
+
+    if choice == 1:
+        while True:
+            side = float(input("Enter the side of square"))
+            area = side ** 2
+            print("the area of sq. is : ", area)
+            repeat = input("do you want to calculate again with square? (yes/no)")
+            if repeat == "no":
+                break
+
+    elif choice == 2:
+        while True:
+            length = float(input("Enter the Length of rectangle"))
+            width = float(input("Enter the width of rectangle"))
+            area = length * width
+            print("the area of rectangle is :", area)
+            repeat = input("do you want to calculate again with rectangle? (yes/no)")
+            if repeat == "no":
+                break
+
+    elif choice == 3:
+        while True:
+            radius = float(input("Enter radius of the circle"))
+            area = ((22 / 7) * (radius ** 2))
+            print("the area of circle is:", area)
+            repeat = input("do you want to calculate again with circle? (yes/no)")
+            if repeat == "no":
+                break
+
+    elif choice == 4:
+        while True:
+            base = float(input("Enter the base if triangle"))
+            height = float(input("Enter the height of triangle"))
+            area = 0.5 * base * height
+            print("Enter the area of triangle is:", area)
+            repeat = input("do you want to calculate again with Triangle? (yes/no)")
+            if repeat == "no":
+                break
+    else:
+        print("invalid input")
+    repeat1 = input("do you wanna repeat again ? (yes/no)")
+    if repeat1 == "no":
+        break"""
+
+# A = "OTD.YOLO.ASAP.BRB.GTG.OTW"
+# Write a prog to separate the string into coma(,) separated values.
+"""A = "OTD.YOLO.ASAP.BRB.GTG.OTW"
+print(A.split("."))"""
+
+# to short alphabetically
+"""a = input("Enter anything here")
+b = sorted(a)
+print(b)"""
+
+# write a prog to remove a given character from a string
+"""a = "hello"
+b = a.replace("e", "")
+print(b)"""
+
+# write a prog to remove (.) from FRIENDS
+"""z = "F.R.I.E.N.D.S"
+b = z.replace(".", "")
+print(b)"""
+
+# write a prog to check the no. of occurrence of a substring in a string
+"""a = "she sells seashells on the sea shore"
+b = a.count("sea")
+print("the no. of times substring  sea occur", b)"""
+
+# Take an input from user as a string then, reverse it.
+"""a = input("enter anything here")
+print(a[::-1])"""
+
+# write a prog to check if a string contains only digits.
+"""a = input("enter anything here")
+print(a.isdigit())"""
+
+# write a prog to check if a string is palindrome.
+"""a = input("enter anything here")
+rev = a[::-1]
+
+if a == rev:
+    print("it is a palindrome")
+else:
+    print("it is not a palindrome")"""
+
+# write a prog to find vowels in a string
+"""a = input("enter anything here")
+vowels = 0
+for i in a:
+    if i == "a" or i == "e" or i == "i" or i == "o" or i == "u" or i == "A" or i == "E" or i == "I" or i == "O" or i == "U":
+        vowels += 1
+
+print("the no. of vowels in string are:", vowels)"""
+
+# write a prog to check if every word in a string begins with a capital letter.
+"""a = input("enter anything here")
+print(a.istitle())"""
+
+# A=["Ross","Rachel","Monica","joe"]
+# write a prog to swap first and forth element
+"""A = ["Ross", "Rachel", "Monica", "joe"]
+A[0], A[3] = A[3], A[0]
+print(A)"""
+
+# write a prog to add a new value at second position
+"""A = ["Ross", "Rachel", "Monica", "joe"]
+A.insert(1, "phoebe")
+print(A)"""
+
+# write a prog to delete a value from third position
+"""A = ["Ross", "Rachel", "Monica", "joe"]
+A.pop(2)
+print(A)"""
+
+# B = [13,7,12,10]
+# write a prog to multiply all the no. in the list
+"""B = [13, 7, 12, 10]
+mul = 1
+for i in (B):
+    mul *= i
+print(mul)"""
+
+# write a prog to get the largest no. and smallest no. from the list
+"""B = [13, 7, 12, 10]
+B.sort()
+print(B)
+
+print("The largest no. is :", B[-1])
+print("the smallest no. is:", B[0])"""
+
+#
