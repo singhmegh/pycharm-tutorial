@@ -72,3 +72,16 @@ print("thanks")"""
 # list
 # dictionary
 # set
+# fun with parameter and arguments
+"""def add(x, y):  # passing parameters
+    print(x + y)
+
+add(2, 3)  # calling the fun by passing arguments
+add(67, 28)"""
+
+
+def rect(length, width):
+    print("The area of rectangle:", length * width)
+
+
+rect(56, 87)
