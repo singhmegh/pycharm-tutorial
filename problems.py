@@ -522,3 +522,69 @@ print(a)"""
 """a = {1, 2, 3, 4, 5, 6}
 b = {2, 3, 4}
 print(b.issubset(a))"""
+
+# write a fun to find max of three no.in python
+"""def maximum_num(val1, val2, val3):
+    if val1 > val2 and val1 > val3:
+        print(val1, "is the greatest num")
+    elif val2 > val1 and val2 > val3:
+        print(val2, "is the greatest num")
+    else:
+        print(val3, "is the greatest num")
+
+maximum_num(78, 65, 1)"""
+
+# write a fun to create and print a list where the value are square of no. between 1 and 30
+"""def create_list():
+    l = []
+    for i in range(1, 31):
+        l.append(i ** 2)
+
+    return l
+
+print(create_list())"""
+
+# write a fun that makes a num as a parameter and check if the num is prime or not
+"""def check_prime(num):
+    if num == 1:
+        print("it is not a prime num")
+    if num == 2:
+        print("it is a prime num")
+    if num >= 2:
+        for i in range(2, num):
+            if num % i == 0:
+                print("it is not a prime num")
+                break  #to discontinue the loop
+        else:
+            print("it is a prime num")
+
+check_prime(19)"""
+
+# write a fun to sum all the num in a list
+"""def add(num):
+    total = 0
+    for i in num:
+        total = total + i
+    return (total)
+
+print(add([12, 6, 8, 4, 98]))"""
+
+# method2 with recursion
+"""def add(nums):
+    if len(nums) == 1:
+        return (nums[0])
+    else:
+        return (nums[0]) + add(nums[1:])
+
+print(add([12, 6, 8, 3, 98]))"""
+
+# write a fun to solve the fibonacci sequence using recursion
+"""def fs(num):
+    if num == 1:
+        return (0)
+    elif num == 2:
+        return (1)
+    else:
+        return (fs(num - 1) + fs(num - 2))
+
+print(fs(8))"""
