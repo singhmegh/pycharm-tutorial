@@ -70,3 +70,5 @@ print("thanks")"""
 
 # string function
 # list
+# dictionary
+# set

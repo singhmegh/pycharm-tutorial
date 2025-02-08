@@ -468,3 +468,57 @@ print("the data has been added to the file")"""
 
 data = json.loads(Student_data)
 print(data["student"]["grade"]["marks"])"""
+
+# write a python prog to sort a dictionary by values
+"""a = {"a": 12, "b": 23, "c": 6, "d": 91, "e": 45}
+a = sorted(a.values())
+print(a)"""
+
+# write a python script to print a dictionary where the keys are no. between 1 and 15 and the values are square of keys
+"""a = {}
+for i in range(1, 16):
+    a[i] = i ** 2
+
+print(a)"""
+
+# write a prog to multiply all the items in a dictionary
+"""a = {"a": 1, "b": 2, "c": 3, "d": 4, "e": 5}
+product = 1
+for i in a:
+    product *= a[i]
+
+print(product)"""
+
+# write a python prog to sort a dictionary by keys
+"""a = {"a": 12, "b": 23, "c": 6, "d": 91, "e": 45}
+a = sorted(a.keys())
+print(a)"""
+
+# write a prog to find max and min in a set
+"""a = {12, 56, 34, 8, 90, 1, 57}
+maximum = max(a)
+minimum = min(a)
+print("the max value of the set is", maximum)
+print("the min value of the set is", minimum)"""
+
+# write a prog to find difference between two sets
+"""a = {1, 5, 6, 8, 2}
+b = {4, 5, 6, 7}
+print(a.difference(b))"""
+
+# write a prog to find common elements in three lists using sets
+"""a = [1, 5, 6, 8, 2]
+b = [4, 5, 6, 7]
+c = [1, 9, 6, 2, 5]
+
+print(set(a) & set(b) & set(c))"""
+
+# write a prog to remove an item from a set
+"""a = {1, 5, 6, 8, 2}
+a.discard(8)
+print(a)"""
+
+# write a prog to check if a set is a subset of another set
+"""a = {1, 2, 3, 4, 5, 6}
+b = {2, 3, 4}
+print(b.issubset(a))"""
