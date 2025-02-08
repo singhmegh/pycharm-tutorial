@@ -427,4 +427,44 @@ print(B)
 print("The largest no. is :", B[-1])
 print("the smallest no. is:", B[0])"""
 
-#
+# 8/2/25
+# convert the following dictionary into JSON format.
+# Student_data = {"name": "David", "age":13, "marks": 87}
+
+# Student_data = {"name": "David", "age": 13, "marks": 87}
+# import json
+
+"""print(type(Student_data))
+data = json.dumps(Student_data)
+print(data)
+print(type(data))"""
+
+# Access the value of age from the given data
+"""Student_data = {"name": "David", "age": 13, "marks": 87}
+
+data = json.loads(Student_data)
+print(data["age"])"""
+
+# pretty print following json data
+"""Student_data = {"name": "David", "age": 13, "marks": 87}
+
+data = json.dumps(Student_data, indent=4, separators=(",", "="))
+print(data)"""
+
+# sort the following json keys and write them a file.
+"""Student_data = {"name": "David", "age": 13, "marks": 87}
+f = open("demo.json.py", "w")
+data = json.dumps(Student_data, indent=4, sort_keys=True)
+f.write(data)
+
+print("the data has been added to the file")"""
+
+# Access the nested key "marks" from the following nested data
+"""Student_data = {  "student":
+                   {"grade":
+                     {"name": "David","marks":87}
+                        }
+                   }
+
+data = json.loads(Student_data)
+print(data["student"]["grade"]["marks"])"""
