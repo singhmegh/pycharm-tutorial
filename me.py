@@ -108,3 +108,6 @@ print(fact(5))"""
 print(x(5, 3, 2))"""
 
 # local and global variables
+# modules
+# datetime,random,math
+# creation of modules
